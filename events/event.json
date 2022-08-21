@@ -1,0 +1,50 @@
+{
+  "resource": "/challenge",
+  "path": "/challenge",
+  "httpMethod": "GET",
+  "headers": null,
+  "multiValueHeaders": null,
+  "queryStringParameters": {
+    "params": "{\"data\": {\"attributes\": {\"list\": [{\"power\": \"6\",\"date\": \"2019-01-22\"}]}} }"
+  },
+  "multiValueQueryStringParameters": {
+    "params": ["\"data\": {\"attributes\": {\"list\": [{\"power\": \"6\",\"date\": \"2019-01-22\"}]}} }"
+    ]
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "g4n9cu",
+    "resourcePath": "/challenge",
+    "httpMethod": "GET",
+    "extendedRequestId": "XNci6HAwoAMFxKQ=",
+    "requestTime": "21/Aug/2022:10:50:58 +0000",
+    "path": "/challenge",
+    "accountId": "487658338491",
+    "protocol": "HTTP/1.1",
+    "stage": "test-invoke-stage",
+    "domainPrefix": "testPrefix",
+    "requestTimeEpoch": 1661079058464,
+    "requestId": "ef4df33f-7cf4-4e4a-afd4-6d0c0f556309",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "cognitoIdentityId": null,
+      "apiKey": "test-invoke-api-key",
+      "principalOrgId": null,
+      "cognitoAuthenticationType": null,
+      "userArn": "arn:aws:iam::487658338491:root",
+      "apiKeyId": "test-invoke-api-key-id",
+      "userAgent": "aws-internal/3 aws-sdk-java/1.12.239 Linux/5.4.196-119.356.amzn2int.x86_64 OpenJDK_64-Bit_Server_VM/25.332-b08 java/1.8.0_332 vendor/Oracle_Corporation cfg/retry-mode/standard",
+      "accountId": "487658338491",
+      "caller": "487658338491",
+      "sourceIp": "test-invoke-source-ip",
+      "accessKey": "ASIAXDCVTXC52O2GCYPO",
+      "cognitoAuthenticationProvider": null,
+      "user": "487658338491"
+    },
+    "domainName": "testPrefix.testDomainName",
+    "apiId": "7a9u0sdq0j"
+  },
+  "body": null,
+  "isBase64Encoded": "False"
+}
