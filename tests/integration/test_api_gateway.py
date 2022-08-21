@@ -69,7 +69,7 @@ class TestApiGateway(TestCase):
         params = {'params': function_query_param}
         response = requests.get(self.api_endpoint, params=params)
         self.assertEqual(response.status_code, 200)
-        self.assertDictEqual(response.json(), {'output': 0.4862})
+        self.assertDictEqual(response.json(), {'output': 0.5062})
 
     def test_api_gateway__happy_flow_list_as_input(self):
         """
