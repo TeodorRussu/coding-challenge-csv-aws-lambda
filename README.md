@@ -76,12 +76,14 @@ Then the service prints out a correct result with a format that matches the form
 
 ----
 
+
 ### The main application code:
 code: 
 [csv_challenge/tariffs_finder.py](https://github.com/TeodorRussu/csv_challenge/blob/2056969426214ea1ae609c59bc6c66c6953a8e8e/csv_challenge/tariffs_finder.py)
 
 tests:
 [tests/test_tariffs_finder.py](https://github.com/TeodorRussu/csv_challenge/blob/2056969426214ea1ae609c59bc6c66c6953a8e8e/tests/test_tariffs_finder.py)
+
 
 ### The AWS Lambda integration:
 code:
@@ -90,7 +92,8 @@ code:
 tests:
 [tests/integration/test_api_gateway.py](https://github.com/TeodorRussu/csv_challenge/blob/2056969426214ea1ae609c59bc6c66c6953a8e8e/tests/integration/test_api_gateway.py)
 
-This project contains source code and supporting files for a serverless application that can be deployed with the SAM CLI. It includes:
+----
+The project contains source code and supporting files for a serverless application that can be deployed with the SAM CLI. It includes:
 
 - csv_challenge - Code for the application's Lambda function.
 - events - Invocation events that you can use to invoke the function.
@@ -99,8 +102,10 @@ This project contains source code and supporting files for a serverless applicat
 
 The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yaml` file in this project. 
 
+## Run and deploy the application
+### To run the app using the SAM integrated with AWS Toolkit plugin:
 
-****To build and test, run and update easily the code, use the plugin AWS Toolkit.**  
+To build and test, run and update easily the code, use the plugin AWS Toolkit.
 The AWS Toolkit is an open source plug-in for popular IDEs that uses the SAM CLI to build and deploy serverless applications on AWS. The AWS Toolkit also adds a simplified step-through debugging experience for Lambda function code. See the following links to get started.**
 * [PyCharm - community edition is enough](https://www.jetbrains.com/pycharm/download/)
 * A valid AWS account where the app can be deployed
@@ -109,9 +114,8 @@ The AWS Toolkit is an open source plug-in for popular IDEs that uses the SAM CLI
 * [Python 3.8 installed](https://www.python.org/downloads/)
 * Docker - [Install Docker community edition](https://hub.doc
 
-## Deploy the sample application
 
-#The application can be run and deployed locally using the intuitive UI in the IDE
+### The application can be run and deployed locally using the intuitive UI in the IDE
 
 Deploy a Lambda using the local code
 ![Deploy a Lambda using the local code](/Users/temporaryadmin/PycharmProjects/csv_challenge/useful_files/Screenshot 2022-08-21 at 17.58.43.png)
@@ -122,7 +126,7 @@ Configure the local runtime for the Lambda function
 
 
 
-To run the app using the SAM CLI, you need the following:
+## To run the app using the SAM CLI, you need the following:
 * A valid AWS account where the app can be deployed
 * [AWS CLI - used to generate local AWS credentials](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 * SAM CLI - [Install the SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
