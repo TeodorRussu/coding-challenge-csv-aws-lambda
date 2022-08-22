@@ -92,6 +92,40 @@ code:
 tests:
 [tests/integration/test_api_gateway.py](https://github.com/TeodorRussu/csv_challenge/blob/2056969426214ea1ae609c59bc6c66c6953a8e8e/tests/integration/test_api_gateway.py)
 
+
+### Live testing
+The current code is deployed to AWS Lambda and can be invoked via AWS API Gateway using the following URL:
+[https://7a9u0sdq0j.execute-api.us-east-1.amazonaws.com/Prod/challenge/](https://7a9u0sdq0j.execute-api.us-east-1.amazonaws.com/Prod/challenge/)
+The GET request requires one query parameter: `'params'`, and its value should have the following structure:
+Note: The query parameter should be URL encoded.
+`{
+    "data": {
+        "attributes": {
+            "list": [
+                {
+                    "power": "12",
+                    "date": "2019-01-22"
+                },
+                {
+                    "value": "8",
+                    "date": "2019-02-22"
+                },{
+                    "power": "40",
+                    "date": "2019-12-22"
+                },
+                {
+                    "value": "33",
+                    "date": "2019-04-22"
+                }
+            ]
+        }
+    }
+}`
+
+![Live testing](/Users/temporaryadmin/PycharmProjects/csv_challenge/useful_files/Screenshot 2022-08-22 at 10.35.31.png)
+
+
+
 ----
 The project contains source code and supporting files for a serverless application that can be deployed with the SAM CLI. It includes:
 
